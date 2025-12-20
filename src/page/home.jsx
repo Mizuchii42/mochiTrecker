@@ -2,11 +2,11 @@ import { TrendingDown, TrendingUp } from "react-feather";
 const Homepage = () => {
   return (
     <>
-      <div className="w-full h-svh">
+      <div className="w-full h-svh dark:text-white">
         <div className="w-[98%] h-40 rounded-md opacity-50 mx-auto flex justify-center justify-items-center items-center">
           <div className="text-center">
-            <small className="font-inter text-gray-500">total dana</small>
-            <h1 className="font-inter font-extrabold text-black text-3xl">30.0000</h1>
+            <small className="font-inter text-gray-500 dark:text-white">total dana</small>
+            <h1 className="font-inter font-extrabold text-black text-3xl dark:text-white">30.0000</h1>
           </div>
         </div>
 
