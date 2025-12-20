@@ -11,10 +11,16 @@ import { useEffect } from 'react'
 function App() {
   useEffect(() => {
     const savedTheme = localStorage.getItem("theme");
+    const font = localStorage.getItem("font");
     if (savedTheme === "dark") {
       document.documentElement.classList.add("dark");
     } else {
       document.documentElement.classList.remove("dark");
+    }
+    if (font === "Besar") {
+      document.documentElement.classList.add("text-[18px]");
+    } else {
+      document.documentElement.classList.remove("text-[18px]")
     }
   }, []);
 
