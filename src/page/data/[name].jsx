@@ -23,7 +23,7 @@ const Viewregist = () => {
 
   return (
     <div className="w-full h-svh pb-20 overflow-y-auto">
-      {regist.map((e, index) => (
+      {regist.length === 0 ? <div className="flex justify-items-center items-center justify-center w-full h-svh font-bold text-sky-500">Loading...</div> : regist.map((e, index) => (
         <div key={index} className="w-full h-auto ml-2">
           <div className="w-full flex justify-items-center items-center justify-between">
             <h1 className="font-bold text-sky-500 ml-2">{e.name}</h1>

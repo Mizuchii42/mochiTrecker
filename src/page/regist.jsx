@@ -23,7 +23,7 @@ const Registpage = () => {
         <button><Link to={`/data/${value}`}><Search /></Link></button>
       </div>
       <div className="w-full h-svh overflow-y-auto overflow-x-hidden mx-auto pb-20 dark:bg-gray-900">
-        {data.map((e, index) => (
+        {data.length === 0 ? <div className="w-full font-bold text-sky-500 h-svh flex justify-center justify-items-center items-center">loading...</div> : data.map((e, index) => (
           <div key={index} className="w-[98%] h-auto mt-3 shadow-sm dark:border-white rounded-sm">
             <div className="w-full flex justify-items-center items-center justify-between">
               <h1 className="font-bold text-sky-500 ml-2">{e.name}</h1>
