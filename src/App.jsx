@@ -9,6 +9,8 @@ import Setting from './page/setting'
 import { useEffect } from 'react'
 import Itempage from './page/menu'
 import Bubble from './componnent/bubblemenu'
+import Registpage from './page/regist'
+import Viewregist from './page/data/[name]'
 
 function App() {
   useEffect(() => {
@@ -36,6 +38,8 @@ function App() {
             <Route path='/info' element={<InfoSevice />} />
             <Route path='/setting' element={<Setting />} />
             <Route path='/menu' element={<Itempage />} />
+            <Route path='/regist' element={<Registpage />} />
+            <Route path='/data/:name' element={<Viewregist />} />
           </Routes>
           <Navbutton />
         </Router>
