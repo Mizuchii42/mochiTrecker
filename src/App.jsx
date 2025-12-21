@@ -11,6 +11,7 @@ import Itempage from './page/menu'
 import Bubble from './componnent/bubblemenu'
 import Registpage from './page/regist'
 import Viewregist from './page/data/[name]'
+import ToramCalculator from './page/kalkulator'
 
 function App() {
   useEffect(() => {
@@ -40,6 +41,7 @@ function App() {
             <Route path='/menu' element={<Itempage />} />
             <Route path='/regist' element={<Registpage />} />
             <Route path='/data/:name' element={<Viewregist />} />
+            <Route path='/mq' element={<ToramCalculator />} />
           </Routes>
           <Navbutton />
         </Router>
