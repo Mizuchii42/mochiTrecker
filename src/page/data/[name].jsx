@@ -22,14 +22,14 @@ const Viewregist = () => {
   }, [name]); // ✅ dependency benar
 
   return (
-    <div className="w-full overflow-y-auto h-24">
+    <div className="w-full h-svh pb-20 overflow-y-auto">
       {regist.map((e, index) => (
-        <div key={index} className="w-full h-24">
+        <div key={index} className="w-full h-auto ml-2">
           <div className="w-full flex justify-items-center items-center justify-between">
-            <h1 className="font-bold ml-2">{e.name}</h1>
-            <p className="mr-5 text-gray-500">Max: {e.max_lv}</p>
+            <h1 className="font-bold text-sky-500 ml-2">{e.name}</h1>
+            <small className="mr-5 text-gray-500">Max: {e.max_lv}</small>
           </div>
-          <p className="ml-3">{e.effect}</p>
+          <p className="ml-3 text-sm">{e.effect}</p>
           <small className="ml-3 text-gray-500">Levels: {e.levels_studied}</small>
         </div>
       ))}

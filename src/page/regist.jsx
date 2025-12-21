@@ -6,7 +6,7 @@ import { Link } from "react-router-dom"
 
 const Registpage = () => {
   const [data, setdata] = useState([])
-  const [invis, setinvis] = useState(false)
+  const [value, setvalue] = useState("")
   useEffect(() => {
     const getData = async () => {
       const res = await axios.get("https://toramonline.vercel.app/regist?limit=100")
@@ -19,8 +19,8 @@ const Registpage = () => {
   return (
     <>
       <div className="mx-auto flex justify-center w-full gap-2">
-        <input placeholder="masukan nama regist" className="border-none w-[85%] h-9" />
-        <button><Search /></button>
+        <input placeholder="masukan nama regist" value={value} onChange={(e) => setvalue(e.target.value)} className="border-none w-[85%] h-9" />
+        <button><Link to={`/data/${value}`}><Search /></Link></button>
       </div>
       <div className="w-full h-svh overflow-y-auto overflow-x-hidden mx-auto pb-20 dark:bg-gray-900">
         {data.map((e, index) => (
