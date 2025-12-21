@@ -7,6 +7,8 @@ import Navbutton from './componnent/navButton'
 import Homepage from './page/home'
 import Setting from './page/setting'
 import { useEffect } from 'react'
+import Itempage from './page/menu'
+import Bubble from './componnent/bubblemenu'
 
 function App() {
   useEffect(() => {
@@ -33,6 +35,7 @@ function App() {
             <Route path='/' element={<Homepage />} />
             <Route path='/info' element={<InfoSevice />} />
             <Route path='/setting' element={<Setting />} />
+            <Route path='/menu' element={<Itempage />} />
           </Routes>
           <Navbutton />
         </Router>
