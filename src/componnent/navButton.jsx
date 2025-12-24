@@ -8,7 +8,7 @@ const Navbutton = () => {
         <Link to="/mq"><BookOpen color="oklch(68.5% 0.169 237.323)" size="25px" /></Link>
         <Link to="/search"><Search color="oklch(68.5% 0.169 237.323)" size="25px" /></Link>
         <Link to="/setting"><Settings color="oklch(68.5% 0.169 237.323)" size="25px" /></Link>
-        <Link to="/help"><HelpCircle color="oklch(68.5% 0.169 237.323)" size="25px" /></Link>
+        <Link to="/changelog"><HelpCircle color="oklch(68.5% 0.169 237.323)" size="25px" /></Link>
       </div>
     </>
   )

@@ -9,17 +9,21 @@ const Registpage = () => {
   const [value, setvalue] = useState("")
   useEffect(() => {
     const getData = async () => {
-      const res = await axios.get("https://toramonline.vercel.app/regist?limit=100")
+      const res = await axios.get("https://toramonline.vercel.app/regist?limit=147")
       const hasil = res.data.data
       setdata(hasil)
     }
     getData()
-  }, [])
+  }, [value])
 
   return (
     <>
       <div className="mx-auto flex justify-center w-full gap-2">
-        <input placeholder="masukan nama regist" value={value} onChange={(e) => setvalue(e.target.value)} className="border-none w-[85%] h-9" />
+        <input placeholder="masukan nama regist" value={value} onChange={(e) => setvalue(e.target.value)} className="w-[85%] mx-auto flex px-3 py-2 rounded
+                 border border-gray-300 dark:border-gray-700
+                 bg-white dark:bg-gray-800
+                 text-black dark:text-white
+                 outline-none" />
         <button><Link to={`/data/${value}`}><Search /></Link></button>
       </div>
       <div className="w-full h-svh overflow-y-auto overflow-x-hidden mx-auto pb-20 dark:bg-gray-900">
