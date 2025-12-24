@@ -8,11 +8,10 @@ import Homepage from './page/home'
 import Setting from './page/setting'
 import { useEffect } from 'react'
 import Itempage from './page/menu'
-import Bubble from './componnent/bubblemenu'
 import Registpage from './page/regist'
 import Viewregist from './page/data/[name]'
-import ToramCalculator from './page/kalkulator'
 import Appview from './page/appview'
+import Changelog from './page/changelog'
 
 function App() {
   useEffect(() => {
@@ -43,6 +42,7 @@ function App() {
             <Route path='/regist' element={<Registpage />} />
             <Route path='/data/:name' element={<Viewregist />} />
             <Route path='/mq' element={<Appview />} />
+            <Route path='/changelog' element={<Changelog />} />
           </Routes>
           <Navbutton />
         </Router>
