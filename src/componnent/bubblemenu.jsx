@@ -3,15 +3,18 @@ import { Link } from "react-router-dom";
 const Bubble = () => {
   return (
     <>
-      <div className="w-full h-24 flex flex-nowrap items-center gap-2 overflow-x-auto">
-
-        <div className="w-24 h-full rounded-full bg-white flex-shrink-0 border-4 border-blue-600">
-          <Link to="/boss"> <img src="/boss_icon.png" alt="bos icon" className="w-full h-full rounded-full" /></Link>
+      <div className="w-full h-svh flex  justify-center dark:bg-gray-900 gap-3">
+        <div className="w-28 h-28 rounded-md hover:bg-sky-500  shadow-md dark:hover:bg-sky-600 dark:shadow-gray-700 dark:bg-sky-500">
+          <img src="/boss_icon.png" />
         </div>
-        <div className="w-24 h-full rounded-full bg-white flex-shrink-0 border-4 border-blue-600">
-          <Link to="/regist"> <img src="/regist.png" alt="regist icon" className="w-full h-full rounded-full" /></Link>
+        <div className="w-28 h-28 rounded-md hover:bg-sky-500  shadow-md dark:hover:bg-sky-600 dark:shadow-gray-700 dark:bg-sky-500">
+          <img src="/regist.png" className="" />
+        </div>
+        <div className="w-28 h-28 flex justify-center justify-items-center items-center rounded-md hover:bg-sky-500  shadow-md dark:hover:bg-sky-600 dark:shadow-gray-700 dark:bg-sky-500">
+          <img src="/appview.png" className="" />
 
         </div>
+
       </div>
 
     </>
