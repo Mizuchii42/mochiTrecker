@@ -8,3 +8,8 @@ changelog update:
    - update ui home page
    - add fitur appview
    - remove calculator mq
+
+## q&e 
+
+What is Toram Sense?
+> Toram Sense is a guide app for Toram players. It provides information such as item information, item photos, item effects, and locations. It also provides useful tools.
